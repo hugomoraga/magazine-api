@@ -1,0 +1,20 @@
+{
+    "name": "magazine-api",
+    "version": "1.0.0",
+    "description": "Api Restful para app magazine-angular",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "nodemon src/index.js"
+    },
+    "author": "Hugo Moraga",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.17.1",
+        "morgan": "^1.10.0",
+        "pg": "^8.2.1"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.4"
+    }
+}
