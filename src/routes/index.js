@@ -1,5 +1,6 @@
 const { Router } = require('express');
 const router = Router();
+const { getUsers } = require('../controllers/index.controller');
 
 // routes
 router.get('/hello-world ', (req, res) => {
@@ -7,12 +8,8 @@ router.get('/hello-world ', (req, res) => {
     res.json({ "title": "hello world" });
 });
 
-router.get('/test', (req, res) => {
-    const data = {
-        "name": "Hugo",
-        "website": "hugomoraga.ml"
-    };
-    res.json(data);
-});
+
+
+router.get('/users', getUsers);
 
 module.exports = router;
